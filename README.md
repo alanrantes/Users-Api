@@ -1,17 +1,27 @@
-# Users API - ASP.NET Core
+# Users API | ASP.NET Core + MongoDB
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat&logo=dotnet&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
 <p align="justify">
-API desenvolvida em <strong>C# com .NET</strong> utilizando o padrão de <strong>Controllers (MVC)</strong>, com integração ao <strong>MongoDB</strong>. O projeto implementa uma 
-<strong>API REST completa (CRUD)</strong>, permitindo operações de criação, leitura, atualização e exclusão de dados, com foco na prática de desenvolvimento backend e manipulação 
-de dados em aplicações modernas.
+API REST para gerenciamento de usuários, desenvolvida em C# com ASP.NET Core e integrada ao MongoDB. O projeto implementa operações completas de CRUD (Create, Read, Update e Delete), seguindo o padrão de Controllers (MVC) para organização da aplicação.
+
+Foi construída com foco na prática de desenvolvimento backend, abordando conceitos como estruturação de APIs, manipulação de dados em banco NoSQL e boas práticas de organização de código.
 </p>
 
+---
 
-## Funcionalidades
+## 🛠️ Tecnologias
+
+- C#
+- ASP.NET Core
+- MongoDB
+- Swagger
+
+---
+
+## 🚀 Funcionalidades
 
 - Cadastro de usuários com os seguintes campos:
   - Nome
@@ -25,38 +35,35 @@ de dados em aplicações modernas.
 - Operações completas de CRUD:
   - Criar usuários
   - Listar todos os usuários
-  - Buscar usuário por ID
-  - Buscar usuário por e-mail
+  - Buscar por ID e e-mail
   - Atualizar dados
-  - Deletar usuários
+  - Remover usuários
 
 ---
 
-## Endpoints
+## 🔗 Endpoints
 
-<div align="center">
-
-<table>
-<tr>
-<th>Método</th>
-<th>Rota</th>
-<th>Descrição</th>
-</tr>
-
-<tr><td>GET</td><td>/api/usuarios</td><td>Lista todos os usuários</td></tr>
-<tr><td>GET</td><td>/api/usuarios/{id}</td><td>Busca um usuário pelo ID</td></tr>
-<tr><td>GET</td><td>/api/usuarios/email/{email}</td><td>Busca um usuário pelo e-mail</td></tr>
-<tr><td>POST</td><td>/api/usuarios</td><td>Cria um novo usuário</td></tr>
-<tr><td>PUT</td><td>/api/usuarios/{id}</td><td>Atualiza todos os dados</td></tr>
-<tr><td>DELETE</td><td>/api/usuarios/{id}</td><td>Remove um usuário</td></tr>
-
-</table>
-
-</div>
+| Método | Rota                         | Descrição                     |
+|--------|------------------------------|--------------------------------|
+| GET    | /api/usuarios                | Lista todos os usuários       |
+| GET    | /api/usuarios/{id}           | Busca um usuário por ID       |
+| GET    | /api/usuarios/email/{email}  | Busca um usuário por e-mail   |
+| POST   | /api/usuarios                | Cria um novo usuário          |
+| PUT    | /api/usuarios/{id}           | Atualiza os dados do usuário  |
+| DELETE | /api/usuarios/{id}           | Remove um usuário             |
 
 ---
 
-## Exemplo de Usuário (JSON)
+## 📦 Estrutura do Projeto
+
+- Controllers
+- Models
+- Services
+- Configurations
+
+---
+
+## 📄 Exemplo de Usuário (JSON)
 
 ```json
 {
@@ -75,10 +82,24 @@ de dados em aplicações modernas.
    ```bash
    git clone <URL_DO_REPOSITORIO>
 2. Abra a solução no Visual Studio
-3. Configure a conexão com o MongoDB no arquivo de configuração (caso necessário)
+3. Configure a string de conexão com o MongoDB no arquivo appsettings.json (caso necessário)
 4. Execute o projeto
-5. Utilize ferramentas como Swagger para testar os endpoints
+5. Acesse o Swagger em:
+   ```bash
+   https://localhost:<porta>/swagger
 
 ## Testes
+Os endpoints foram testados utilizando o Swagger, permitindo a validação de todas as operações de CRUD de forma prática e interativa.
 
-Todos os endpoints foram testados utilizando o <strong>Swagger</strong>, garantindo o funcionamento correto das operações de CRUD.
+## Aprendizado
+Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
+
+- Criação de APIs REST com ASP.NET Core
+- Integração com banco de dados NoSQL (MongoDB)
+- Estruturação utilizando padrão MVC (Controllers)
+- Implementação de operações CRUD
+- Organização e boas práticas no backend
+
+## Observações
+As senhas são utilizadas apenas para fins de estudo e não possuem criptografia nesta aplicação.
+
