@@ -3,6 +3,7 @@
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat&logo=dotnet&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=swagger&logoColor=black)
 
 <p align="justify">
 API REST para gerenciamento de usuários, desenvolvida em C# com ASP.NET Core e integrada ao MongoDB. O projeto implementa operações completas de CRUD (Create, Read, Update e Delete), seguindo o padrão de Controllers (MVC) para organização da aplicação.
